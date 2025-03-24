@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Menu Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #cb202d;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .dish {
+            width: 30%;
+            margin: 20px;
+            border: 2px solid #cb202d;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #ffd000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .dish img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.2s ease;
+        }
+        .dish img:hover {
+            transform: scale(1.05);
+        }
+        .dish h3 {
+            background-color: #cb202d;
+            color: white;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+        .dish p {
+            padding: 10px;
+            text-align: center;
+        }
+        .dish a {
+            color: white;
+            text-decoration: seashell;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #cb202d;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> <font size="10" font face="le monospace"><strong>FORK N SPOON</strong></font></h1>
+<p><font size="5" font face="arial"></font> Taste Beyond Your Imagination<div>&#128523;9:00-23:00&#128523;</div></font></p>
+</header>
+
+<section class="container">
+    <div class="dish">
+        <a href="https://www.google.com/search?q=pasta" target="_blank">
+            <img src="https://imgs.search.brave.com/1ZvTP3p-8mus5vlY-f8FNFOMGd1x-bZ-q9_88AfWkv0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wZW5uZS1wYXN0/YS10b21hdG8tc2F1/Y2Utd2l0aC1jaGlj/a2VuLXRvbWF0b2Vz/LXdvb2Rlbi10YWJs/ZV8xMDg0MDY4LTE4/Ni5qcGc_c2l6ZT02/MjYmZXh0PWpwZw" alt="Pasta">
+        </a>
+        <h3><a href="https://www.google.com/search?q=pasta"<font color="white" target="_blank">Pasta </font></a></h3>
+        <p>A Delicious Blend of Italian Spices and Ingredients.</p>
+    </div>
+
+    <div class="dish">
+        <a href="https://www.google.com/search?q=sushi" target="_blank">
+            <img src="https://images.pexels.com/photos/343870/pexels-photo-343870.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sushi">
+        </a>
+        <h3><a href="https://www.google.com/search?q=sushi" target="_blank">Sushi</a></h3>
+        <p>A Traditional Japanese Dish with Fresh Fish and Rice.</p>
+    </div>
+
+    <div class="dish">
+        <a href="https://www.google.com/search?q=biryani" target="_blank">
+            <img src="https://ministryofcurry.com/wp-content/uploads/2023/10/paneer-biryani_-9.jpg" alt="Biryani">
+        </a>
+        <h3><a href="https://www.google.com/search?q=biryani" target="_blank">Biryani</a></h3>
+        <p>A Spicy and Flavorful Rice Dish from South Asia.</p>
+    </div>
+
+    <div class="dish">
+        <a href="https://www.google.com/search?q=burger" target="_blank">
+            <img src="https://imgs.search.brave.com/RkuFQjUAeTzn63PeCp2SVMBtxmpz9XOseQTbsQqUmcY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by90YXN0eS1idXJn/ZXItaXNvbGF0ZWQt/ZGFyay1iYWNrZ3Jv/dW5kLWZyZXNoLWhh/bWJ1cmdlci1mYXN0/Zm9vZC13aXRoLWJl/ZWYtY2hlZXNlXzEy/ODA2NjgtNzA0Lmpw/Zz9zZW10PWFpc19o/eWJyaWQ" alt="Burger">
+        </a>
+        <h3><a href="https://www.google.com/search?q=burger" target="_blank">Burger</a></h3>
+        <p>A Classic American Sandwich with a Juicy Patty and Fresh Toppings.</p>
+    </div>
+
+    <div class="dish">
+        <a href="https://www.google.com/search?q=pizza" target="_blank">
+            <img src="https://imgs.search.brave.com/9F3zqbTdudpegHImPxnSOfHgRMLhNHvgiskUA36YEdk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wZXBwZXJvbmkt/cGl6emEtd2l0aC1t/ZWx0ZWQtY2hlZXNl/LXRvcHBpbmdzLXdv/b2Rlbi1ib2FyZF84/MzkyNS0xMjk0NC5q/cGc_c2l6ZT02MjYm/ZXh0PWpwZw" alt="Pizza">
+        </a>
+        <h3><a href="https://www.google.com/search?q=pizza" target="_blank">Pizza</a></h3>
+        <p>A Classic Italian Cheesy, Saucy Delight Straight from the Oven.</p>
+    </div>
+
+    <div class="dish">
+        <a href="https://www.google.com/search?q=tacos" target="_blank">
+            <img src="https://c.ndtvimg.com/2024-08/e4o2p528_tacos_625x300_29_August_24.jpg?im=FeatureCrop,algorithm=dnn,width=384,height=384" alt="Tacos">
+        </a>
+        <h3><a href="https://www.google.com/search?q=tacos" target="_blank">Tacos</a></h3>
+        <p>A Mexican Specialty with a variety of fillings and Sauces.</p>
+    </div>
+
+<div class="dish">
+    <a href="https://www.google.com/search?q=coffee" target="_blank">
+        <img src="https://imgs.search.brave.com/Q8YDXRMGzXjlXnlbQB0n0GXi1ow9swL8W1cdseinNUY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ob3QtY29mZmVl/LWJsYWNrLWJhY2tn/cm91bmRfNzU4NDcw/LTEyNTg1LmpwZz9z/ZW10PWFpc19oeWJy/aWQ" alt="Coffee">
+    </a>
+    <h3><a href="https://www.google.com/search?q=coffee" target="_blank">Coffee</a></h3>
+    <p>A Flavorful and Healthy Drink.</p>
+</div>
+
+<div class="dish">
+    <a href="https://www.google.com/search?q=tea" target="_blank">
+        <img src="https://myborosil.com/cdn/shop/products/my-borosil-tea-cups-tea-sets-220-ml-x-6-rio-red-square-cup-saucer-set-30479250522250.jpg" alt="Tea">      
+    </a>
+    <h3><a href="https://www.google.com/search?q=tea" target="_blank">Tea</a></h3>
+    <p>A Refreshing and Soothing Beverage.</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=Juice" target="_blank">
+        <img src="https://img.freepik.com/premium-photo/mango-juice-with-splashes-with-mango-fruit-studio-background-restaurant-with-garden_741910-6958.jpg" alt="Juice">      
+    </a>    
+    <h3><a href="https://www.google.com/search?q=juice" target="_blank">Juice</a></h3>
+    <p>A Refreshing and Healthy Beverage.</p>
+</div>
+
+<div class="dish">
+    <a href="https://www.google.com/search?q=chicken salad" target="_blank">
+        <img src="https://gimmesomegrilling.com/wp-content/uploads/2021/05/Grilled-Chicken-Salad-Recipe-Square-750x750.jpg" alt="Chicken Salad">
+    </a>
+    <h3><a href="https://www.google.com/search?q=chicken salad" target="_blank">Chicken Salad</a></h3>
+    <p>A Delicious and Healthy Snack.</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=chef salad" target="_blank">
+        <img src="https://www.julieseatsandtreats.com/wp-content/uploads/2021/07/Chef-Salad-Square.jpg" alt="Chef Salad">
+    </a>
+    <h3><a href="https://www.google.com/search?q=chef salad" target="_blank">Chef Salad</a></h3>
+    <p>A Refreshing and Flavorful Dish.</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=greeksalad" target="_blank">
+        <img src="https://img.freepik.com/premium-photo/square-plate-greek-salad-fresh-mediterranean-delight_756535-7009.jpg" alt="Greek Salad">
+    </a>
+    <h3><a href="https://www.google.com/search?q=greeksalad" target="_blank">Greek Salad</a></h3>
+    <p>A Refreshing and Flavorful Dish of Greek.</p>
+</div>
+
+<div
+class="dish">               
+    <a href="https://www.google.com/search?q=momo" target="_blank">
+        <img src="https://imgs.search.brave.com/5rEcj4-0fdJMgGvAnK2kQj_R4Teg3WJq53vmtzbdMjA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuc3BvdGFwcHMu/Y28vc3BvdHMvMmUv/Zjc2YzY1NGRkMTRj/N2I4ZjgwYjM0ODk4/OTIxZmRkL21lZGl1/bQ" alt="Momo">
+    </a>
+    <h3><a href="https://www.google.com/search?q=momo" target="_blank">Momo</a></h3>
+    <p>A Classic Chinese Dish</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=shakes" target="_blank">
+        <img src="https://blacktapme.com/wp-content/uploads/2023/11/CrazyShake.jpg" alt="Shakes">
+    </a>
+    <h3><a href="https://www.google.com/search?q=shakes" target="_blank">Shakes</a></h3>
+    <p>A Healthy and Delicious Treat</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=icecream" target="_blank">
+        <img src="https://cdn.vox-cdn.com/thumbor/VIJqBQR-d7cZfvdZmiOrwlSQAM8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/20003897/Ice_Cream_Sundae_from_Treat_Dreams.jpeg" alt="IceCream">
+    </a>
+    <h3><a href="https://www.google.com/search?q=icecream" target="_blank">IceCream</a></h3>
+    <p>A Delicious and Refreshing Treat</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=chocolate" target="_blank">
+        <img src="https://img.freepik.com/premium-photo/watercolor-illustration-chocolate-brownies-with-drizzle_899449-73056.jpg" alt="Chocolate">
+    </a>
+    <h3><a href="https://www.google.com/search?q=chocolate" target="_blank">Chocolate</a></h3>  
+    <p>A Delicious and Sweet Treat</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=cake" target="_blank">
+        <img src="https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cake">
+    </a>
+    <h3><a href="https://www.google.com/search?q=cake" target="_blank">Cake</a></h3>  
+    <p>A Sweet and Tasty Dessert</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=Maggi" target="_blank">
+        <img src="https://media.istockphoto.com/id/1500339071/photo/creamy-maggi-with-red-and-green-bell-peppers-a-comforting-delight.jpg?s=612x612&w=0&k=20&c=HobCKK8iwEPn88G96sMS4190XnuA-iaiCjuPAWQ0gt0=" alt="Maggi">
+    </a>
+    <h3><a href="https://www.google.com/search?q=Maggi" target="_blank">Maggi</a></h3>
+    <p>A Childhood Loved Snack</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=sweets" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/51e21Xi0QwL._AC_UF350,350_QL80_.jpg" alt="sweets">
+    </a>
+    <h3><a href="https://www.google.com/search?q=sweets" target="_blank">Sweets</a></h3>
+    <p> A Delicious and Sugary Treat</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=South Indian" target="_blank">
+        <img src="https://silkroadrecipes.com/wp-content/uploads/2021/07/Indian-Crepes-Masala-Dosa-square.jpg" alt="South Indian">
+    </a>
+    <h3><a href="https://www.google.com/search?q=South Indian" target="_blank">South Indian</a></h3>
+    <p>Discover Delicious South India</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=gupchup" target="_blank">
+        <img src="https://i.pinimg.com/736x/a4/d4/27/a4d4279a5a430206b8e1ea5d51a4f0ab.jpg" alt="gupchup">
+    </a>
+    <h3><a href="https://www.google.com/search?q=gupchup" target="_blank">GupChup</a></h3>
+    <p>Spicy and Tasty</p>
+</div>
+
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=veg thali" target="_blank">
+        <img src="https://img.freepik.com/premium-photo/indian-mini-meal-parcel-platter-combo-thali-with-rajma-masala-roti-dal-tadka-jeera-rice-salad_951562-4537.jpg" alt="Veg Thali">
+    </a>
+    <h3><a href="https://www.google.com/search?q=veg thali" target="_blank">Veg Thali</a></h3>
+    <p>Combo of Rice, Dal, Sabji, Roti, Papad, Salad</p>
+</div>
+
+<div
+class="dish">
+    <a href="https://www.google.com/search?q=nonveg thali" target="_blank">
+        <img src="https://originalsweets.ca/wp-content/uploads/2021/12/NON-VEG-THALI-ONLY.png" alt="nonveg thali">
+    </a>
+    <h3><a href="https://www.google.com/search?q=nonveg thali" target="_blank">Nonveg Thali</a></h3>
+    <p>Combo of Rice, Chicken Curry, Fish Curry, Mutton Curry Salads, Papad, Roti </p>
+</div>
+
+</section>
+
+<footer>
+    <p>Created by [Abhishek Kr. Verma], BCA Semester 4 <br> copyright@copy; 2024</p>
+</footer>
+
+</body>
+</html>

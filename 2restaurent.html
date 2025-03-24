@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Midnight Feast - Restaurant</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      line-height: 1.6;
+    }
+    header {
+      background: url('pexels3.jpg') no-repeat center center/cover;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    header h1 {
+      font-size: 5rem;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f8b400;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+    .menu-item {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.2s ease;
+    }
+    .menu-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .menu-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .menu-item h3 {
+      margin: 10px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+    .menu-item p {
+      margin: 10px;
+      color: #555;
+    }
+    .menu-item a {
+      display: block;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      background: #f8b400;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .menu-item a:hover {
+      background: green;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1><font face="arial" size="40"><b>Midnight Feast</b></font></h1>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header Section */
+    .header {
+      position: relative;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      text-align: center;
+    }
+
+    .header h1 {
+      z-index: 1;
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Social Media Links */
+    .social-media {
+      position: absolute;
+      bottom: 10px; /* Position from the bottom of the header */
+      right: 10px;  /* Position from the right side */
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-media a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-media a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+  <!-- Social Media Links -->
+  <div class="social-media">
+    <a href="https://www.facebook.com" target="_blank">
+      <img src="https://cdn-icons-png.freepik.com/256/5968/5968764.png?ga=GA1.1.110117472.1731774489&semt=ais_hybrid" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+      <img src="https://cdn-icons-png.freepik.com/256/15707/15707749.png?ga=GA1.1.110117472.1731774489&semt=ais_hybrid" alt="Instagram">
+    </a>
+    <a href="https://www.twitter.com" target="_blank">
+      <img src="https://cdn-icons-png.freepik.com/256/3670/3670151.png?ga=GA1.1.110117472.1731774489&semt=ais_hybrid" alt="Twitter">
+    </a>
+  </div>
+</body>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Menu Section -->
+
+  <section id="menu">
+    <h2 style="text-align: center; margin: 20px;"><font size="6">Our Signature Dishes</font></h2>
+    <div class="menu">
+
+      <!-- Dish 1 -->
+      <div class="menu-item">
+
+        <img loading="lazy" src="https://imgs.search.brave.com/LNVU_yVwUoSi4Iki_uU0kCyUIlMVWbOXpO5krieZURE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YWxscmVjaXBlcy5j/b20vdGhtYi9hXzBX/OHlrX0xMQ3RILVZQ/cWcydUxEOUk1UGs9/LzB4NTEyL2ZpbHRl/cnM6bm9fdXBzY2Fs/ZSgpOm1heF9ieXRl/cygxNTAwMDApOnN0/cmlwX2ljYygpLzEx/OTczLXNwYWdoZXR0/aS1jYXJib25hcmEt/aWktRERNRlMtNHgz/LTZlZGVhNTFlNDIx/ZTQ0NTdhYzBjMzI2/OWYzYmU1MTU3Lmpw/Zw" alt="Dish 1">
+        <h3>Spaghetti Carbonara</h3>
+        <p>Classic Italian pasta with creamy sauce.</p>
+        <a href="https://www.example.com/spaghetti" target="_blank">Order Now</a>
+
+      </div>
+      <!-- Dish 2 -->
+      <div class="menu-item">
+        <img loading="lazy" src="https://imgs.search.brave.com/Kng7nau3djJhpGC1z1mUygnqLQCMyUqsVf5Ol357jds/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwMS5ueXQuY29t/L2ltYWdlcy8yMDI0/LzA3LzAzL211bHRp/bWVkaWEvMDNGQVJJ/TkFUQXJleC0yLWh3/dHYvMTZGQVJJTkFU/QXJleC0yLWh3dHYt/bWVkaXVtVGhyZWVC/eVR3bzQ0MC5qcGc_/cXVhbGl0eT03NSZh/dXRvPXdlYnA" alt="Dish 2">
+        <h3>Farinata</h3>
+        <p>Herbed chickpea flour and onion pancake.</p>
+        <a href="https://www.example.com/salmon" target="_blank">Order Now</a>
+      </div>
+
+      <!-- Dish 3 -->
+      <div class="menu-item">
+        <img loading="lazy" src="https://imgs.search.brave.com/9dg3wbTDnml2XMSBzY_zV62C-3FKszA2zcJdIXKe76g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/ODYyNjg0My9waG90/by9waXp6YS1tYXJn/aGVyaXRhLXN0dWRp/by1zaG90LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1MSW5y/V1AxVWtNSDE3VjZK/d2Q0d2VsTURjVVNH/NjVEaGRnTUV2Sl9p/SlVvPQ" alt="Dish 3">
+        <h3>Margherita Pizza</h3>
+        <p>Stone-baked pizza with fresh mozzarella.</p>
+        <a href="https://www.example.com/pizza" target="_blank">Order Now</a>
+      </div>
+
+      <!-- Dish 4 -->
+      <div class="menu-item">
+        <img loading="lazy" src="https://imgs.search.brave.com/fJjtXR2ByK4F8pf7jETY034iSo0HUsqs5p6kx7MyMzo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jaG9jb2xhdGUt/Zm9uZGFudC1jdXBj/YWtlLXdpdGgtc3Ry/YXdiZXJyaWVzLXBv/d2RlcmVkLXN1Z2Fy/XzI4MjktMTkxLmpw/Zz9zZW10PWFpc19o/eWJyaWQ" alt="Dish 4">
+        <h3>Chocolate Lava Cake</h3>
+        <p>Warm chocolate cake with molten center.</p>
+        <a href="https://www.example.com/cake" target="_blank">Order Now</a>
+      </div>
+
+<div class="menu-item">
+  <img loading="lazy" src="https://imgs.search.brave.com/LS-SQeNohsIN6wyZG7d_bm8tJkOyEXolIve2XMaYdZs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjcw/OTA2ODg1L3Bob3Rv/L3BhbmVlci10aWtr/YS1tYXNhbGEtY3Vy/cnktd2l0aC1yb3Rp/LWluZGlhbi1mb29k/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz02a01kYWtEaU1X/Q2JXMl9TTmdTSkRj/M2Ywa0Z6YW5sRUM0/bUFhbHRCQWs4PQ" alt="Dish 5">
+  <h3>Paneer Tikki Masala</h3>
+  <p>Spicy,cremey paneer with a tangy masala.</p>
+  <a href="https://www.example.com/cake" target="_blank">Order Now</a>
+</div>
+
+<div class="menu-item">
+  <img loading="lazy" src="https://imgs.search.brave.com/sAs8nqD7mz3qEN4BSmT4zUUxIIe-e9IAeoRAqYVKyTE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwMS5ueXQuY29t/L2ltYWdlcy8yMDI0/LzExLzE0L211bHRp/bWVkaWEvU0VXLWJ1/dHRlcmZsYWtlLXJv/bGxzLWpmcG0vU0VX/LWJ1dHRlcmZsYWtl/LXJvbGxzLWpmcG0t/bWVkaXVtVGhyZWVC/eVR3bzQ0MC5qcGc_/cXVhbGl0eT03NSZh/dXRvPXdlYnA" alt="Dish 6">
+  <h3>Salted Butterflake Rolls</h3>
+  <p>Filled with creamy butter and salty flavour.</p>
+  <a href="https://www.example.com/cake" target="_blank">Order Now</a>
+</div>
+
+<div class="menu-item">
+  <img loading="lazy" src="https://imgs.search.brave.com/zZ8pOVk4h8w_CwOXDpmuxjG7QstNASSO5mQyJ5FSMnE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjcw/OTA3MTQxL3Bob3Rv/L3ZlZ2V0YWJsZS1w/dWxhby1pbmRpYW4t/Zm9vZC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9Y1U5M19s/VmJoYjQ0SUd2anVS/TWNaU2h4RWw1c2JC/NGw1MGFGNmlMNENJ/VT0" alt="Dish 7">
+  <h3>Veg Briyani</h3>
+  <p>Delicious vegetarian combination briyani.</p>
+  <a href="https://www.example.com/cake" target="_blank">Order Now</a>
+</div>
+
+<div class="menu-item">
+  <img loading="lazy" src="https://imgs.search.brave.com/Ur_WWF2XX3np_wmWo8TW82u3Qo8sKbh1lKUFjT41rY4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ob3QtZG9nLXdp/dGgtZnJpZXMtYmVl/cl83ODY1MC00OTMu/anBnP3NlbXQ9YWlz/X2h5YnJpZA" alt="Dish 8">
+  <h3>Hotdog</h3>
+  <p>Grilled sausage served in the slice of bun.</p>
+  <a href="https://www.example.com/cake" target="_blank">Order Now</a>
+</div>
+
+<div class="menu-item">
+  <img loading="lazy" src="https://imgs.search.brave.com/LIJzveUHCocl0qwmSf86CQzox83Bx95rHrUZ1Nv_wtw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vcGhvdG9z/L2hhbS1hbmQtY2hp/dmVzLW9tbGV0dGUt/cGljdHVyZS1pZDEw/NDQ0MzIyMDI_Yj0x/Jms9MjAmbT0xMDQ0/NDMyMjAyJnM9MTcw/NjY3YSZ3PTAmaD1I/N1NpWWNZN21oM2lE/YUZJR05zaWw4MTZh/T2tKeFpxT1dqak1O/YzkwbTBFPQ" alt="Dish 9">
+  <h3>Omelette</h3>
+  <p>Easy,healthy and simple cooked recipe of egg.</p>
+  <a href="https://www.example.com/cake" target="_blank">Order Now</a>
+</div>
+
+<div
+class="menu-item">
+<img loading="lazy" src="https://imgs.search.brave.com/aoN9Hgge_y0KCO8SiLCryjX3lgvzItZc9bgGoS0dEvg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2ltcGx5cmVjaXBl/cy5jb20vdGhtYi94/dWZROGFmaE5OZk44/MVJRRWZEU3ByODhi/MEE9LzE1MDB4MC9m/aWx0ZXJzOm5vX3Vw/c2NhbGUoKTptYXhf/Ynl0ZXMoMTUwMDAw/KTpzdHJpcF9pY2Mo/KS9zaW1wbHktcmVj/aXBlcy13aW5lLWNo/aWNrZW4tbGVhZC02/LTJkNDk2YTZlZmFl/MTQzMTE5ZWQ3NmVj/MjEwNTI2NGMxLmpw/Zw" alt="Dish 10">
+<h3>Chicken in white wine</h3>
+<p>Chicken is cooked in white wine and garlic.</p>
+<a href="https://www.example.com/cake" target="_blank">Order Now</a>
+</div>
+
+<div class="menu-item">
+  <img loading="lazy" src="https://imgs.search.brave.com/NVIBBGf8p7ncDJO8f572cdYsAUFm3kx5lE8FUnDQHj4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvNTkx/ODk5MC9zdG9jay1w/aG90by1ib3dsLW9m/LWNyZWFteS1wdWRk/aW5nLWFuZC1mcmVz/aC1mcnVpdA" alt="Dish 11">
+  <h3>Fruit custard</h3>
+  <p>Fruit custard with fresh fruits healthy for summer.</p>
+  <a href="https://www.example.com/cake" target="_blank">Order Now</a>
+</div>
+
+<div class="menu-item">
+  <img loading="lazy" src="https://img.freepik.com/free-photo/delicious-vegan-salad-plate-with-various-fresh-vegetables-dark-background_179666-47225.jpg?t=st=1731774509~exp=1731778109~hmac=8cf65348521fe55630e1b174b1513031481c4354e105d9130a20b913a94c5fa1&w=1060" alt="Dish 12">
+  <h3>Salad</h3>
+  <p>Healthy and tasty salad with fresh vegetables.</p>
+  <a href="https://www.example.com/cake" target="_blank">Order Now</a>
+</div>
+</section>
+
+<!-- New Sections: Best Dishes for Dinner and Breakfast -->
+
+<section id="breakfast">
+  <h2 style="text-align: center; margin: 20px;"><font size="6">Best Dishes for Breakfast</font></h2>
+  <div class="menu">
+    <!-- Breakfast Dish 1 -->
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/kAWvZEnGlZ6upYwyXQPtLXnkdaODF9tkIDQ62tmfHQM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YWxscmVjaXBlcy5j/b20vdGhtYi9kT1Ri/LXlmX3QxQ1hndzkx/bGc2OVd2enJsOEU9/LzE1MDB4MC9maWx0/ZXJzOm5vX3Vwc2Nh/bGUoKTptYXhfYnl0/ZXMoMTUwMDAwKTpz/dHJpcF9pY2MoKS9B/Ui0xNjI3NjAtZmx1/ZmZ5LXBhbmNha2Vz/LURETUZTLWJlYXV0/eS0zeDQtMzVkNGI1/NGI1NDQ2NDcwMWIz/Mjg3MGQ0YjE2NDZi/ZmUuanBn" alt="Pancakes">
+      <h3>Fluffy Pancakes</h3>
+      <p>Classic pancakes with maple syrup and berries.</p>
+      <a href="https://www.example.com/pancakes" target="_blank">Order Now</a>
+    </div>
+    <!-- Breakfast Dish 2 -->
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/pfX4OJehIZ-30lWeb_W9a9_0FSmehsWNunVgGyqtjhI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTMx/MTUwNzA4NS9waG90/by9hdm9jYWRvLXRv/YXN0LXdpdGgtZWdn/cy1hbmQtcm9hc3Rl/ZC10b21hdG9lcy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/RHF1U1pvcFhkUE9Y/aEpFbHRBRndhYXha/SWRpcXN4Z2xhYjI1/UFZYOHdmOD0" alt="Avocado Toast">
+      <h3>Avocado Toast</h3>
+      <p>Crispy toast topped with avocado and poached eggs.</p>
+      <a href="https://www.example.com/avocado-toast" target="_blank">Order Now</a>
+    </div>
+    <!-- Breakfast Dish 3 -->
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/aLk3-5G032zFxfi_ZFOhQh7HgR3J8u0jCatyeATTd_E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI5/ODE1OTg1OC9waG90/by9hY2FpLXNtb290/aGllLWJvd2wtd2l0/aC10b3BwaW5ncy5q/cGc_Yj0xJnM9MTcw/NjY3YSZ3PTAmaz0y/MCZjPWdNVXkxanhq/VHZjbGJyTTNMRFQ0/Z3FmaHpjdzRhZUg0/SkZ4aHlOSWd6NE09" alt="Smoothie Bowl">
+      <h3>Smoothie Bowl</h3>
+      <p>A refreshing bowl of blended fruits and granola.</p>
+      <a href="https://www.example.com/smoothie-bowl" target="_blank">Order Now</a>
+    </div>
+
+ <!-- Breakfast Dish 4 -->
+ <div class="menu-item">
+  <img src="https://imgs.search.brave.com/S20JDPWgz0cILb0E3XbPnlB9SHd48XmRRebJqDT0VNY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI3/OTEzNDcwOS9waG90/by9pbWFnZS1vZi1t/ZXRhbC10cmF5LXdp/dGgtYWxvby1wYXJh/dGhhLXBpbGUtdG9w/cGVkLXdpdGgtcmVk/LW9uaW9uLXJpbmdz/LWFuZC1zcHJpbmts/ZS1vZi5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9R1JheUxh/U0hWT3VXWm42M2xW/MDJOdkxaNzV5OEVD/RTdadzItMERrNUg1/VT0" alt="Smoothie Bowl">
+  <h3>Aloo paratha</h3>
+  <p>Aloo paratha with fresh vegetables like potato, onion and tomato.</p>
+  <a href="https://www.example.com/smoothie-bowl" target="_blank">Order Now</a>
+</div>
+
+<!--Dinner Section-->
+
+<section id="dinner">
+  <h2 style="text-align: center; margin: 20px;"><font size="6">Best Dishes for Dinner</font></h2>
+  <div class="menu">
+
+    <!-- Dinner Dish 1 -->
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/Rk11I3-rYZiXUndA-KdjOD1_9KA0W2c1NYnoHfeSEwc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9n/cmlsbGVkLXN0ZWFr/LWNvb2tlZC1wZXJm/ZWN0aW9uLWRlbGlj/aW91cy1iYXJiZWN1/ZS1tZWFsLWdlbmVy/YXRlZC1ieS1hcnRp/ZmljaWFsLWludGVs/bGlnZW5jZV8xODg1/NDQtMTI2NDYzLmpw/Zz9zZW10PWFpc19o/eWJyaWQ" alt="Grilled Steak">
+      <h3>Grilled chicken</h3>
+      <p>Super juicy spicy and tender grilled chicken.</p>
+      <a href="https://www.example.com/grilled-steak" target="_blank">Order Now</a>
+    </div>
+    <!-- Dinner Dish 2 -->
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/WgmTAXXIHONZyixm7a-d0EEuOpcKJD-dq7Pr1wWR_U4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9zZWFmb29kLXBs/YXR0ZXItd29vZGVu/LXRhYmxlXzEwMDQ1/OTItMTI5NzguanBn/P3NpemU9NjI2JmV4/dD1qcGc" alt="Seafood Platter">
+      <h3>Seafood Platter</h3>
+      <p>A delightful mix of shrimp, fish, and crab.</p>
+      <a href="https://www.example.com/seafood-platter" target="_blank">Order Now</a>
+    </div>
+    <!-- Dinner Dish 3 -->
+    <div class="menu-item">
+      <img src="https://imgs.search.brave.com/JSIxf715AUjyT5Dv-K5KrJOfnVuW13a7uk7gwY_SxYE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9pbmRp/YW4tdHlwaWNhbC10/aGFsaS1tZWFsLTE4/MDUyODU3LmpwZw" alt="Lamb Chops">
+      <h3>Veg thali</h3>
+      <p>Thali full of all vegitables and rice and complementary sweet.</p>
+      <a href="https://www.example.com/lamb-chops" target="_blank">Order Now</a>
+    </div>
+
+    <!-- Dinner Dish 4 -->
+    <div class="menu-item">
+      <img src="https://img.freepik.com/premium-photo/indian-gavkari-chicken-thali-food-platter-consists-variety-veggieschicken-meat-lentilsrice-sweet-dish-snacks-etc-selective-focus_726363-583.jpg?ga=GA1.1.110117472.1731774489&semt=ais_hybrid" alt="Lamb Chops">
+      <h3>NonVeg thali</h3>
+      <p>Thali full of all nonvegs (chicken,mutton,fish) rice and sweet.</p>
+      <a href="https://www.example.com/lamb-chops" target="_blank">Order Now</a>
+    </div>
+</section>
+
+  <!-- Footer Section -->
+
+  <footer>
+    <p>© 2024 Midnight Feast. All rights reserved.</p>
+  </footer>
+</body>
+</html>
