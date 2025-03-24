@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Hover Effect</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+.profile-info {
+    padding: 20px;
+}
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+.profile-info p {
+    margin: 10px 0 0;
+    color: #777;
+}
+.profile-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+.profile-links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.profile-links a:hover {
+    color: #0056b3;
+}
+</style>
+<body>
+    <div class="profile-card">
+        <div class="profile-image">
+            <img src="undraw_Male_avatar_g98d.png" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h2>Andy</h2>
+            <p>Web Developer</p>
+        </div>
+        <div class="profile-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Portfolio</a>
+        </div>       
+    </div>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background: #8c2eff;
+      color: white;
+      padding: 15px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    header h1 {
+      font-size: 40px;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 20px;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    header nav a:hover {
+      color: #4CAF50;
+    }
+
+  
+    #home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background:lavender;
+      color: black;
+      text-align: center;
+      flex-direction: column;
+  
+    }
+
+    #home h1 {
+      font-size: 75px;
+      margin-bottom: 20px;
+    }
+
+    #home p {
+      font-size: 20px;
+      margin-bottom: 70px;
+    }
+
+    #home button {
+      padding: 12px 30px;
+      background: #4CAF50;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-size: 19px;
+      transition: 0.3s;
+      margin-top: 0.1px;
+    }
+
+    #home button:hover {
+      background: #45a049;
+      transform: scale(1.05);     
+     }
+  
+
+    #about {
+      padding: 70px 10%;
+      background: white;
+      text-align: center;
+    }
+
+    #about h2 {
+      font-size: 43px;
+      margin-bottom: 20px;
+      color: #2C3E50;
+    }
+
+    #about p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #555;
+    }
+
+    #about img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-top: 10px;
+      transition: transform 0.4s ease;
+    }
+
+    #about img:hover {
+      transform: scale(1.05);
+    }
+
+    #skills {
+      padding: 70px;
+      background:lavender;
+      text-align: center;
+    }
+
+    #skills h2 {
+      font-size: 43px;
+      margin-bottom: 40px;
+      color: #2C3E50;
+    }
+
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      width: 120px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .skill img {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill h4 {
+      color: #4CAF50;
+    }
+
+    .skill:hover {
+      transform: translateY(-10px);
+    }
+
+    .skill:hover img {
+      transform: scale(1.1);
+    }
+
+  
+    #projects {
+      padding: 70px 10%;
+      background: white;
+      text-align: center;
+    }
+
+    #projects h2 {
+      font-size: 43px;
+      margin-bottom: 40px;
+      color: #2C3E50;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+      background: #ecf0f1;
+      width: 280px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .project-card h3 {
+      color: #4CAF50;
+      margin: 15px 0;
+    }
+
+    .project-card p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+
+    #contact {
+      padding: 50px;
+      background: #8c2eff;
+      color: white;
+      text-align: center;
+    }
+
+    #contact h2 {
+      font-size: 45px;
+      margin-bottom: 40px;
+    }
+
+    form input, form textarea {
+      width: 80%;
+      padding: 15px;
+      margin-bottom: 23px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 15px;
+      color: #333;
+    }
+
+    form button {
+      width: 20%;
+      padding: 12px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    form button:hover {
+      background: #45a049;
+    }
+
+
+    footer {
+      background: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #4CAF50;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+
+  <section id="home">
+    <h1>Hi, I'm Abhishek Kr. Verma</h1>
+    <p>Web Developer | Designer</p>
+    <button>Explore More</button>
+  </section>
+
+  <!-- About Section -->
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="profile photo.jpg" alt="Profile">
+    <p>I am a passionate coder who loves to create beautiful and functional websites.</p>
+  </section>
+
+  <!-- Skills Section -->
+   
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <img src="https://imgs.search.brave.com/PTJUQqKGsAvw_rNdLXj24o9Tz2VXrajt0sswyxs2pSk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL3RodW1icy81/ODQ3ZjViZGNlZjEw/MTRjMGI1ZTQ4OWMu/cG5n" alt="HTML">
+        <h4>HTML</h4>
+      </div>
+      <div class="skill">
+        <img src="https://imgs.search.brave.com/BejFdjSrMT6osElmwsqeyTkpWMbHodubrPstVRD_fwg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL3RodW1icy82/MmIyMjFlZjAzOGFh/ZDRkM2VkN2NhMmUu/cG5n" alt="CSS">
+        <h4>CSS</h4>
+      </div>
+      <div class="skill">
+        <img src="https://imgs.search.brave.com/vnGbcq5GSuNxl-BnCsHH9sr106Hp2y4jnZ0iOMebtFo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL3RodW1icy82/MTNiNjRmZTMwZTg1/MzAwMDRiYTNhMDMu/cG5n" alt="JS">
+        <h4>JavaScript</h4>
+      </div>
+      <div class="skill">
+        <img src="https://imgs.search.brave.com/DkWPP-0Jq1Xdy3rKYti966NP3FUCbi_1YR6fDbU4Bfg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL3RodW1icy81/ODQ4MzBmNWNlZjEw/MTRjMGI1ZTRhYTEu/cG5n" alt="React">
+        <h4>React</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="Screenshot 2024-11-19 222504.png" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>A code a Personal Portfolio Website using HTML and CSS.</p>
+      </div>
+      <div class="project-card">
+        <img src="Screenshot 2024-11-19 222220.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>A made my HTML syllabus using HTML.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+
+  <footer>
+    <p>&copyright; 2024 Abhishek | <a href="abhishekkrverma7@gmai..com">abhishekkrverma7@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>
