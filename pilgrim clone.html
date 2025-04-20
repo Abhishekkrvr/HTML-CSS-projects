@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilgrim Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 45px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      transition: color 0.3s;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover {
+      color: #a3005b;
+    }
+
+    .hero {
+      background: url('https://images.pexels.com/photos/3762642/pexels-photo-3762642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
+      height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      background-color: rgba(0,0,0,0.6);
+      padding: 15px 30px;
+      border-radius: 12px;
+    }
+
+    .intro, .about, .offers, .testimonials, .products, .shop-category, .new-arrivals, .men-curated, .what-looking, .shop-ingredients, .celeb-must, .our-promise {
+      padding: 23px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .intro p, .about p, .offers p, .testimonials p {
+      font-size: 18px;
+      color: #555;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .section-heading {
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .section-subtext {
+      text-align: center;
+      font-size: 17px;
+      margin-bottom: 37px;
+      color: #666;
+    }
+
+    .product-grid, .offer-grid, .testimonial-grid, .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card, .offer-card, .testimonial-card, .category-card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 15px;
+      background-color: #fff;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover, .offer-card:hover, .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .product-card img, .offer-card img, .testimonial-card img, .category-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3, .offer-card h3, .category-card h3 {
+      margin: 10px 0 5px;
+      font-size: 21px;
+      text-align: center;
+    }
+
+    .product-card p, .offer-card p, .testimonial-card p, .category-card p {
+      font-size: 16px;
+      color: #444;
+      text-align: center;
+    }
+
+    .product-card a {
+      background-color: #a3005b;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 25px;
+      display: block;
+      margin: 15px auto 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .product-card a:hover {
+      background-color: #800046;
+    }
+
+    .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    footer p span {
+      color: #a3005b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://a.storyblok.com/f/174198/3198x1078/4c2bdf5854/pilgrim-horizontal-with-tagline-cc.png/m/" alt="Pilgrim Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Skincare</a></li>
+        <li><a href="#">Haircare</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Explore Beauty Secrets From Around The World</h1>
+  </section>
+
+  <section class="intro">
+    <p>Pilgrim is a clean beauty brand bringing you secrets from beauty cultures around the globe. Our mission is to make beauty rituals more natural, effective, and exciting. All products are 100% vegan, cruelty-free, and free from harmful chemicals.</p>
+  </section>
+
+  <section class="about">
+    <h2 class="section-heading">Why Choose Pilgrim?</h2>
+    <p>We source our ingredients from global beauty destinations like Korea and Spain to create powerful formulations. With Pilgrim, you're not just buying skincare—you’re adopting a journey towards clean, conscious beauty.</p>
+  </section>
+
+  <!--New Section: Bestselling Products-->
+
+  <section class="products">
+    <h2 class="section-heading">Bestselling Products</h2>
+    <p class="section-subtext">Explore our most loved products that bring visible results with the finest ingredients and global beauty wisdom.</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images-static.nykaa.com/media/catalog/product/f/c/fc41a8d8906120580052a_5.jpg?tr=w-500" alt="Vitamin C Night Serum">
+        <h3>Vitamin C Night Serum</h3>
+        <p>Boost radiance and fight pigmentation overnight with white lotus and hyaluronic acid.</p>
+        <p><strong>Price:</strong> ₹550</p>
+        <a href="https://www.discoverpilgrim.com/products/vitamin-c-night-serum-with-hyaluronic-acid-white-lotus" target="_blank">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://discoverpilgrim.com/cdn/shop/files/Proven-Benefits_5fa2083e-d5ef-4f53-aef9-1fcbdb6c91cf.jpg?v=1691758269&width=1500" alt="Face Wash">
+        <h3>Volcanic Ash Face Wash</h3>
+        <p>Deep cleanses pores, controls oil, and detoxifies with volcanic lava ash from Jeju Island.</p>
+        <p><strong>Price:</strong> ₹299</p>
+        <a href="https://www.discoverpilgrim.com/products/volcanic-lava-ash-face-wash" target="_blank">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://images-static.nykaa.com/media/catalog/product/0/3/036af578906120580106-4.jpg?tr=w-500" alt="Hair Serum">
+        <h3>Argan Oil Hair Serum</h3>
+        <p>Instantly smoothens, adds shine, and controls frizz for all hair types with Moroccan argan oil.</p>
+        <p><strong>Price:</strong> ₹399</p>
+        <a href="https://www.discoverpilgrim.com/products/argan-oil-hair-serum" target="_blank">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://discoverpilgrim.com/cdn/shop/files/Firstimage_0faf96a5-06c3-4b2c-881a-f36984206515.jpg?v=1740653159&width=1500" alt="Face Serum">
+        <h3>Pilgrim Peeling Solution</h3>
+        <p>Deep cleanses pores, controls oil, and detoxifies with volcanic lava ash from Jeju Island.</p>
+        <p><strong>Price:</strong> ₹299</p>
+        <a href="https://www.discoverpilgrim.com/products/volcanic-lava-ash-face-wash" target="_blank">Buy Now</a>
+
+
+<!--New Section: Special Offers-->
+
+    </div>
+  </section>
+
+  <section class="offers">
+    <h2 class="section-heading">Special Offers</h2>
+    <p class="section-subtext">Unlock beauty deals and combos crafted to give you more value and glow!</p>
+    <div class="offer-grid">
+      <div class="offer-card">
+        <img src="https://discoverpilgrim.com/cdn/shop/files/Korean-Beauty-Daily-Glow-Kit-Listing-Images-1.jpg?v=1696936328" alt="Combo Offer">
+        <h3>Glow Combo Pack</h3>
+        <p>Save 20% on our glow-enhancing trio - serum, face wash & night gel.</p>
+      </div>
+      <div class="offer-card">
+        <img src="https://discoverpilgrim.com/cdn/shop/files/SummerEscape5.jpg?v=1683981921&width=1080" alt="Summer Deal">
+        <h3>Summer Skincare Kit</h3>
+        <p>Stay fresh with our limited summer special set. Flat 15% OFF!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Section: Shop by Category -->
+  <section class="shop-category">
+    <h2 class="section-heading">Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://discoverpilgrim.com/cdn/shop/files/Product-Image.jpg?v=1734067703" alt="Skincare">
+        <h3>Skincare</h3>
+      </div>
+      <div class="category-card">
+        <img src="https://media6.ppl-media.com//tr:h-235,w-235,c-at_max,dpr-2,q-40/static/img/product/385617/pilgrim-ultimate-hair-revival-kit-pilgrim-sulfate-free-shampoo-200ml-pilgrim-argan-oil-hair-conditioner-200ml-pilgrim-redensyl-200ml-anagain-advanced-hair-growth-serum-50ml_8_display_1719908718_a6ae7fc7.jpg" alt="Haircare">
+        <h3>Haircare</h3>
+      </div>
+      <div class="category-card">
+        <img src="https://discoverpilgrim.com/cdn/shop/files/GLOW-BODY-LOTION-DMART-_1080X1080_-12_1.jpg?v=1732858982&width=1080" alt="Bodycare">
+        <h3>Bodycare</h3>
+      </div>
+      <div class="category-card">
+        <img src="https://discoverpilgrim.com/cdn/shop/products/white-lotus-day-cream-spf-50-pa-with-camellia-yugdugu-554772.jpg?v=1683285692" alt="Facecare">
+        <h3>Facecare</h3>
+      </div>
+      
+
+    </div>
+  </section>
+
+  <!-- New Section: New Arrivals -->
+  <section class="new-arrivals">
+    <h2 class="section-heading">New Arrivals</h2>
+    <p class="section-subtext">Discover the latest additions to our collection, crafted with care and innovation.</p>
+    <di class="product-grid">
+      <div class="product-card">
+        <img src="https://discoverpilgrim.com/cdn/shop/files/1_92d82c2d-100e-4172-ae5f-c26a6a22b8db.jpg?v=1743144566" alt="New Product 1">
+        <h3>New Product 1</h3>
+        <p>Details about the new product.</p>
+        <p><strong>Price:</strong> ₹XXX</p>
+        <a href="#">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://discoverpilgrim.com/cdn/shop/files/Argan-Oil-Hair-Conditioner-_-Sulphate-Free-Shampoo.jpg?v=1719299930" alt="New Product 2">
+        <h3>New Product 2</h3>
+        <p>Details about the new product.</p>
+        <p><strong>Price:</strong> ₹XXX</p>
+        <a href="#">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://discoverpilgrim.com/cdn/shop/files/Argan-Oil-Hair-Conditioner-_-Sulphate-Free-Shampoo.jpg?v=1719299930" alt="New Product 2">
+        <h3>New Product 2</h3>
+        <p>Details about the new product.</p>
+        <p><strong>Price:</strong> ₹XXX</p>
+        <a href="#">Buy Now</a>
+      </div>
+  </section>
+
+
+  
+
+
+<!--New Section: Testimonial-->
+
+  <section class="testimonials">
+    <h2 class="section-heading">What Our Customers Say</h2>
+    <p class="section-subtext">Trusted by thousands of happy users across India</p>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Customer 1">
+        <p><strong>Aditi M.</strong>: “Pilgrim's vitamin C serum is magic. My skin feels fresh and glowy every morning!”</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" alt="Customer 2">
+        <p><strong>Rohan S.</strong>: “Tried the hair serum last month and it's now a staple. Frizz-free and shiny hair every day!”</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <span>Pilgrim Clone</span>. Built for educational purposes only. All rights to original content belong to Pilgrim.</p>
+  </footer>
+
+</body>
+</html>
